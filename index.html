@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advice Generator</title>
+
+    <meta name="description" content="Generate advice, نصايح, نصيحة">
+    <meta name="keywords" content="advice generator, advice API, generate advice, smart advice, API for advice">
+    <meta name="robots" content="index, follow">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://yourwebsite.com">
+
+    <meta property="og:title" content="Advice Generator - Generate Smart Advice via API">
+    <meta property="og:description" content="Instantly generate personalized advice using our powerful API for seamless integration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/images/preview.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Advice Generator - Generate Smart Advice via API">
+    <meta name="twitter:description" content="Use our API to generate personalized advice instantly for your projects.">
+    <meta name="twitter:image" content="https://yourwebsite.com/images/preview.png">
+
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1E3A8A",
+              secondary: "#F59E0B",
+            },
+            fontFamily: {
+              arabic: ['"Cairo"', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+
+    <link rel="stylesheet" href="animation.css">
+
+    <script src="index.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-tr from-blue-300 to-purple-300 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
+    <header>
+        <div class="container">
+            <div class="bubble"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="bubble"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="bubble"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="bubble"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="bubble"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <button id="themeToggle" class="p-2 rounded-md shadow-sm bg-gray-200
+         dark:bg-gray-700 text-sm">
+            🌙
+        </button>
+    </header>
+
+    <main class="flex justify-center px-9 -mt-20 relative z-20">
+        <div
+            class="card flex flex-col justify-center items-center w-[400px] h-[280px] rounded-[30px] bg-white/10 dark:bg-gray-800 shadow-[15px_15px_30px_#bebebe,-15px_-15px_30px_#9b9696] dark:shadow-lg dark:shadow-black/50 backdrop-blur-md p-5 gap-5 transition-colors duration-500">
+            <p id="adviceText"
+                class="text-lg text-cyan-900
+                 dark:text-cyan-100 text-center max-w-md min-h-[60px] font-bold"></p>
+
+            <button class="uiverse" id="generateBtn">
+                <div class="wrapper">
+                    <span class="text-cyan-950 dark:text-cyan-100">Give me advice</span>
+                    <div class="circle circle-12"></div>
+                    <div class="circle circle-11"></div>
+                    <div class="circle circle-10"></div>
+                    <div class="circle circle-9"></div>
+                    <div class="circle circle-8"></div>
+                    <div class="circle circle-7"></div>
+                    <div class="circle circle-6"></div>
+                    <div class="circle circle-5"></div>
+                    <div class="circle circle-4"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-1"></div>
+                </div>
+            </button>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
