@@ -23,3 +23,12 @@ document.getElementById("generateBtn").addEventListener("click", () => {
       console.error(error);
     });
 });
+// استعادة الثيم عند تحميل الصفحة
+window.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('theme') === 'dark' || 
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    htmlElement.classList.add('dark');
+  } else {
+    htmlElement.classList.remove('dark');
+  }
+});
